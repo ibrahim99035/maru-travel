@@ -52,6 +52,13 @@ export const metadata: Metadata = {
         alt: "Maru Travel",
         type: "image/jpeg",
       },
+      {
+        url: "/StockSnap_NWAPXFUMDW.jpg",
+        width: 600,
+        height: 600,
+        alt: "Maru Travel",
+        type: "image/jpeg",
+      },
     ],
     locale: "en_US",
     type: "website",
