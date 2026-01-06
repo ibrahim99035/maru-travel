@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     "luxury travel, travel packages, vacation destinations, luxury tours, travel agency, exotic destinations, premium travel",
   authors: [{ name: "Maru Travel" }],
   creator: "Maru Travel",
+  category: "travel",
   publisher: "Maru Travel",
   formatDetection: {
     email: false,
@@ -49,6 +50,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Maru Travel",
+        type: "image/jpeg",
       },
     ],
     locale: "en_US",
@@ -94,6 +96,11 @@ export const metadata: Metadata = {
     google: "google-site-verification-code",
     yandex: "yandex-verification-code",
     yahoo: "yahoo-verification-code",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Maru Travel",
   },
     generator: 'v0.app'
 }
