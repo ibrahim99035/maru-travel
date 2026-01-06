@@ -1,4 +1,5 @@
 import type React from "react"
+import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Geist, Cormorant_Garamond } from "next/font/google"
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next"
@@ -190,7 +191,9 @@ export default function RootLayout({
 
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
-          <Analytics />
+          <Suspense fallback={null}>
+            <Analytics />
+          </Suspense>
           <VercelAnalytics />
         </ThemeProvider>
       </body>
